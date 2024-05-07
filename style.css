@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: #650db8;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-bottom: 10px solid #540a99;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #cac9c9;
+    text-align: center;
+    padding: 30px 0;
+    display: none;
+}
+
+form h1 {
+    margin-bottom: 20px;
+}
+
+button,
+input {
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2e9e2e;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 5px solid #115e11;
+    box-shadow: 4px 1px 10px #00000093;
+    cursor: pointer;
+}
+
+#button_cancelar {
+    background-color: #bd3333;
+    border-bottom: 5px solid #8f2626;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style: none;
+    max-width: 25%;
+    max-height: 280px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.overlay_img_link{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px;
+    opacity: 0;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.overlay_img_link:hover{
+    opacity: 1;
+}
